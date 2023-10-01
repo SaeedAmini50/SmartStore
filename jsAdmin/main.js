@@ -1,16 +1,6 @@
 (function ($) {
     "use strict";
 
-    // Spinner
-    var spinner = function () {
-        setTimeout(function () {
-            if ($('#spinner').length > 0) {
-                $('#spinner').removeClass('show');
-            }
-        }, 1);
-    };
-    spinner();
-    
     
     // Back to top button
     $(window).scroll(function () {
@@ -121,6 +111,7 @@
 
 
     // Single Line Chart
+	/*
     var ctx3 = $("#line-chart").get(0).getContext("2d");
     var myChart3 = new Chart(ctx3, {
         type: "line",
@@ -137,9 +128,10 @@
             responsive: true
         }
     });
-
+*/
 
     // Single Bar Chart
+	/*
     var ctx4 = $("#bar-chart").get(0).getContext("2d");
     var myChart4 = new Chart(ctx4, {
         type: "bar",
@@ -206,7 +198,8 @@
             responsive: true
         }
     });
-
+*/
+document.getElementById("spinner").classList.remove('show');
     
 })(jQuery);
 
